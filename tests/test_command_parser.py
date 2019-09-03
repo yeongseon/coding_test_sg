@@ -8,6 +8,11 @@ class CommandParserTest(unittest.TestCase):
         self.assertEqual(commands[0]['command'], "Add")
         self.assertEqual(commands[0]['name'], "Jane")
 
+    def test_not_support_cmd(self):
+        parser = Parser()
+        commands = parser.get_commands("./test_not_support_input.txt")
+        self.assertEqual(commands, [])
+
 
 
 
