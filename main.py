@@ -15,7 +15,8 @@ else:
     commands = parser.get_commands(sys.stdin)
 
 # print(commands)
-processor.process(commands)
+result = processor.process(commands)
+print(result)
 
 
 
