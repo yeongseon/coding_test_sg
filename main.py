@@ -1,4 +1,3 @@
-from ccpayment.core import main
 from ccpayment.command_parser import Parser
 from ccpayment.command_processor import Processor
 import sys
@@ -14,9 +13,5 @@ if len(sys.argv) > 1:
 else:
     commands = parser.get_commands(sys.stdin)
 
-# print(commands)
 result = processor.process(commands)
-print(result)
-
-
-
+processor.print_result(result)
