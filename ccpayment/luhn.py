@@ -1,3 +1,9 @@
+"""
+file 주석
+luhn.py? 무슨뜻? -> 오히려 helper.py가 더 좋을 수도
+"""
+
+# 함수명 변경 card_luhn_check_sum... 이런식으로
 def cardLuhnChecksumIsValid(card_number):
     """ the card passes a luhn mod-10 checksum """
     sum = 0
