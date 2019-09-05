@@ -1,12 +1,19 @@
 import unittest
 from ccpayment.command_parser import Parser
-import sys
-
+lines = [
+    "Add Jane 4111111111111111 $1000",
+    "Add Evan 5454545454545454 $3000",
+    "Add Daniel 1234567890123456 $2000",
+    "Charge Jane $500",
+    "Charge Jane $800",
+    "Charge Evan $7",
+    "Credit Evan $100",
+    "Credit Daniel $200"
+]
 class CommandParserTest(unittest.TestCase):
     def test_parse(self):
         parser = Parser()
-        file = open(sys.path[1] + "/inputs/input.txt")
-        commands = parser.get_commands(file.readlines())
+        commands = parser.get_commands(lines)
         print("=>", commands)
         self.assertEqual(commands[0]['command'], "Add")
         self.assertEqual(commands[0]['name'], "Jane")

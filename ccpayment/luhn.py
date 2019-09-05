@@ -15,3 +15,4 @@ def cardLuhnChecksumIsValid(card_number):
         sum = sum + digit
 
     return ( (sum % 10) == 0 )
+

@@ -13,5 +13,8 @@ class TestProcessor(TestCase):
 
         processor = Processor()
         result = processor.process(commands)
-        processor.print_result(result)
+        print(result)
+        self.assertEqual(result['Jane']['amount'], 500.0)
+        self.assertEqual(result['Evan']['amount'], -93.0)
+        self.assertEqual(result['Daniel']['amount'], 0.0)
 
