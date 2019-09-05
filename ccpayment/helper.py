@@ -1,10 +1,10 @@
 """
 file 주석
-luhn.py? 무슨뜻? -> 오히려 helper.py가 더 좋을 수도
+luhn 10 알고리즘으로 카드 번호가 유효한지 check한 결과를 return
 """
 
-# 함수명 변경 card_luhn_check_sum... 이런식으로
-def cardLuhnChecksumIsValid(card_number):
+
+def card_luhn_checksum_is_valid(card_number):
     """ the card passes a luhn mod-10 checksum """
     sum = 0
     num_digits = len(card_number)

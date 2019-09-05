@@ -1,4 +1,4 @@
-from ccpayment.luhn import cardLuhnChecksumIsValid
+from ccpayment.helper import cardLuhnChecksumIsValid
 class Processor():
     cards = {}
     def process(self, commands):
