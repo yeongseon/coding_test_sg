@@ -1,6 +1,6 @@
 # 신용카드 결제 시스템
 
-![Alt text](/images/flow.png?raw=true "data flow")
+![Alt text](/images/flow.png?raw=true "data flow" | width=100)
 
 ## 사용방법
 ```
