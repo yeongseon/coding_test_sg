@@ -18,5 +18,5 @@ def main():
     result = processor.process(commands)
     processor.print_result(result)
 
-
-main()
+if __name__ == '__main__':
+    main()
