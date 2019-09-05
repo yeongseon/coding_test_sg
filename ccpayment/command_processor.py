@@ -1,4 +1,12 @@
+"""
+commad_processor.py
+"""
 from ccpayment.luhn import cardLuhnChecksumIsValid
+
+# class Processor(object)
+# def __init__(self)
+#    self.cards = {}
+#
 class Processor():
     cards = {}
     def process(self, commands):
@@ -13,6 +21,8 @@ class Processor():
                 # 잔액(amount)을 증가시킨다
                 card = self.cards[command['name']]
                 if card['validation_result'] == False:
+                    # print 대시 logger 사용할 것
+                    # https://hamait.tistory.com/880
                     print("{} {} {} validation result False".format(
                         command['name'], command['command'], command['amount']))
                     continue
